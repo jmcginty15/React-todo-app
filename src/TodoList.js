@@ -29,6 +29,14 @@ const TodoList = () => {
         setTodos(newList);
     }
 
+    function changeStatus(uuid) {
+        const newList = [...todos];
+        let i = 0;
+        while (newList[i].id !== uuid && i < newList.length) i++;
+        if (i !== newList.length) newList[i].complete = !newList[i].complete;
+        setTodos(newList);
+    }
+
     return (
         <div className="TodoList">
             <h1>Todo:</h1>
@@ -39,6 +47,7 @@ const TodoList = () => {
                 complete={todo.complete}
                 handleRemove={(id) => removeItem(id)}
                 handleEdit={(id, task) => editItem(id, task)}
+                handleComplete={(id) => changeStatus(id)}
             />)}
             <NewTodoForm addItem={addItem} />
         </div>

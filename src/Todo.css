@@ -7,6 +7,10 @@
     float: right;
 }
 
-.Todo-edit, .Todo-remove {
+.Todo-edit, .Todo-remove, .Todo-mark {
     float: none;
+}
+
+.Todo-complete {
+    text-decoration-line: line-through;
 }
