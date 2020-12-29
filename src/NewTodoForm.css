@@ -1,0 +1,8 @@
+.NewTodoForm {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.NewTodoForm-submit {
+    float: right;
+}

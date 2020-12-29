@@ -1,0 +1,12 @@
+.Todo, .Todo-edit-form {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.Todo-buttons {
+    float: right;
+}
+
+.Todo-edit, .Todo-remove {
+    float: none;
+}
