@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot when complete 1`] = `
+<DocumentFragment>
+  <div
+    class="Todo"
+  >
+    <span
+      class="Todo-complete"
+      data-testid="todo-text"
+    >
+      feed dog
+    </span>
+    <span
+      class="Todo-buttons"
+    >
+      <button
+        class="Todo-mark"
+      >
+        Mark Incomplete
+      </button>
+       
+      <button
+        class="Todo-edit"
+      >
+        Edit
+      </button>
+       
+      <button
+        class="Todo-remove"
+      >
+        X
+      </button>
+    </span>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`matches snapshot when incomplete 1`] = `
+<DocumentFragment>
+  <div
+    class="Todo"
+  >
+    <span
+      class=""
+      data-testid="todo-text"
+    >
+      feed dog
+    </span>
+    <span
+      class="Todo-buttons"
+    >
+      <button
+        class="Todo-mark"
+      >
+        Mark Complete
+      </button>
+       
+      <button
+        class="Todo-edit"
+      >
+        Edit
+      </button>
+       
+      <button
+        class="Todo-remove"
+      >
+        X
+      </button>
+    </span>
+  </div>
+</DocumentFragment>
+`;

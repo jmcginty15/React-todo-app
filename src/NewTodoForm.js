@@ -20,7 +20,7 @@ const NewTodoForm = ({ addItem }) => {
     return (
         <div className="NewTodoForm">
             <form onSubmit={handleSubmit}>
-                <input name="task" type="text" placeholder="enter a new todo item" value={input} onChange={handleChange} required></input>
+                <input name="task" data-testid="new-todo-input" type="text" placeholder="enter a new todo item" value={input} onChange={handleChange} required></input>
                 <button className="NewTodoForm-submit">Add</button>
             </form>
         </div>
